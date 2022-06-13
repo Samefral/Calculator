@@ -79,6 +79,7 @@ class Calculator {
         this.num1 = 0;
         this.num2 = 0;
         this.operationFlag = false;
+        this.pointButtonLimit();
     }
 
 
