@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.calculator {
+    font-size: 24px;
+    width: 400px;
+    height: 600px;
+    margin: 100px auto;
+    border: 1px solid #191919;
+    background-color: #1F1F1F;
+    box-shadow: 0px 1px 4px 2px indigo;
+}
+
+.calculator-display {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    box-shadow: 0px 0px 4px 2px indigo;
+    background-color: #000000;
+    color: white;
+}
+
+.calculator-display__first-num {
+    color: gray;
+    font-size: 26px;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    margin: 0;
+}
+
+.calculator-display__text-content {
+    /* position: absolute;
+    right: 35px;
+    bottom: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 60px;
+    margin: 0; */
+    position: absolute;
+    right: 35px;
+    bottom: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 60px;
+    margin: 0;
+    max-width: 320px;
+}
+
+
+
+
+.calculator-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.calculator-row {
+    display: flex;
+    gap: 5px;
+}
+
+.calculator-row--btn-erase {
+    flex-direction: column;
+}
+
+.calculator-btn {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    font-size: 17px;
+    border: none;
+    background-color: #060606;
+    color: white;
+}
+
+.calculator-btn:hover {
+    background-color: #343434;
+}
+
+.calculator-btn:active {
+    background-color: #494949;
+}
+
+.calculator-btn--operation {
+    background-color: #131313;
+}
+
+.calculator-btn-erase {
+    width: 97px;
+    font-size: 14px;
+    align-self: flex-end;
+    background-color: #131313
+}
+
+.calculator-btn-operation,
+.calculator-btn-clear,
+.calculator-btn-square {
+    background-color: #131313;
+}
+
+.calculator-btn-erase::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 31px;
+    border: 1px solid white;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    width: 29px;
+    height: 13px;
+}
+
+.calculator-btn-equal {
+    background-color: #271345;
+}
+
+.calculator-btn-equal:hover {
+    background-color: #310375;
+}
+
+.calculator-btn-equal:active {
+    background-color: #34007F;
+}
